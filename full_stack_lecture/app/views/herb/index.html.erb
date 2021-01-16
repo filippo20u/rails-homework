@@ -1,0 +1,18 @@
+<h1> Herb Garden </h1>
+
+
+<ul>
+
+<%#  = signonly in what I want to show not all the embedded code  %>
+    <% @herbs.each do |herb| %>
+    <li>  <%= link_to herb.name , 
+    herb_path(herb)  %> </li>
+    <% end %>
+
+</ul>
+
+
+<br />
+
+
+<%= link_to 'Add a new herb', new_herb_path %>
